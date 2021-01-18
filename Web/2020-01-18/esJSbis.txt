@@ -1,0 +1,35 @@
+1. In una pagina sono presenti:
+- 1 elenco numerico con 5 voci
+- 1 form composto da:
+	- una casella select con 5 voci, i numeri da 1 a 5
+	- una casella di testo
+	- un pulsante per l'avvio del compito
+Inserendo un certo testo nella casella di testo e scegliendo una certa voce dalla casella select, questo testo sostituirà quello della voce del numero scelto.
+
+1bis. In una pagina sono presenti:
+- 1 elenco numerico con 5 voci
+- 1 form composto da:
+	- una casella di testo
+Inserendo un certo testo nella casella di testo e cliccando su una qualsiasi voce dall'elenco numerato, questo testo sostituirà quello della voce cliccata.
+
+1ter. In una pagina è presente un elenco numerico con n voci.
+Il clic su una di queste fa apparire un form composto da:
+- una casella di testo
+- un pulsante per l'avvio del compito
+Il clic sul pulsante farà scomparire il form e sostituirà il testo della voce precedentemente cliccata con quello inserito nella casella di testo.
+Un ulteriore clic su qualsiasi altra voce (o la stessa) ripete il procedimento.
+
+2. In una pagina sono presenti:
+- una tabella con n righe e m colonne contenente in ciascuna cella un qualunque testo
+- 1 form composto da:
+	- una casella select con 6 voci di colori
+	- una famiglia di 2 radio button indicanti: colore del testo o colore dello sfondo
+	- un pulsante per l'avvio del compito
+A seconda delle scelte effettuate TUTTE le celle della tabella avranno quelle caratteristiche.
+	
+3. In una pagina sono presenti:
+- una tabella con n righe e m colonne contenente in ciascuna cella un qualunque testo
+- 1 form composto da:
+	- una casella per l'inserimento di un colore (type="color") 
+	- una famiglia di 2 radio button indicanti: colore del testo o colore dello sfondo
+Il click su una cella qualsiasi provoca il cambiamento del tipo di colore su quella cella 

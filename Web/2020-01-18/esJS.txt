@@ -1,0 +1,53 @@
+Per gli esercizi è assai utile avere il riferimento alle lezioni delle guide di html.it
+Guida Javascript
+	Lezioni da studiare:
+	1, 5-9, 11-15, 60
+Guida CSS3
+Lezioni da studiare:
+	1-8
+
+
+
+es1
+In una pagina ci sono 2 immagini, clicco sulla prima e cambia, clicco sulla seconda e cambia
+
+es2
+In una pagina ci sono 2 immagini, clicco sulla prima e cambia la seconda, clicco sulla seconda e cambia la prima
+
+es3
+In una pagina c'è un'immagine, se ci vado sopra con il mouse cambia, se esco ritorna com'era
+
+es4
+In una pagina c'è un'immagine, se ci vado sopra con il mouse la sua altezza diventa doppia, se esco ritorna com'era 
+
+es5
+Parametrizzare la funzione usata in es1 e es2 in modo che le immagini cambiate siano diverse
+
+es6
+Attraverso 2 finestre di dialogo acquisire la stringa messaggio e il numero naturale n. Visualizzare nella pagina (non come finestra di dialogo) n volte la stringa messaggio
+
+es6bis
+la stringa sarà visualizzata in n righe diverse
+
+es7
+Attraverso 2 finestre di dialogo acquisire la stringa messaggio e il numero naturale n.
+Creare nella pagina un elenco puntato in cui ogni voce è costituita da messaggio e dall'indice della voce. (Esempio: messaggio1,..., messaggio5)
+
+es7bis
+Le informazioni saranno acquisite attraverso un opportuno form e non con finestre di dialogo
+
+es8
+Calcolare l'IMC. Le informazioni necessarie saranno acquisite tramite opportuno form.
+
+es8 bis
+Calcolare l'IMC. Le informazioni necessarie saranno acquisite tramite opportuno form. L'altezza potrà essere acqusita in metri o in centimetri, in piedi e in iarde usando una famiglia di 4 radio button
+
+es8 ter
+Calcolare l'IMC. Le informazioni necessarie saranno acquisite tramite opportuno form. L'altezza potrà essere acqusita in metri o in centimetri usando una casella select.
+
+es9
+Attraverso 3 finestre di dialogo acquisire il numero naturale nRighe, il numero naturale nColonne, la stringa coloreS.
+Creare una tabella avente nRighe e nColonne tutte con sfondo di colore coloreS. Il contenuto delle celle è una costante qualsiasi.
+
+es9bis
+Le informazioni saranno acquisite attraverso un opportuno form e non con finestre di dialogo

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Es8</title>
+</head>
+<body>
+    <div id="main">
+        <form id="imc-input">
+            Altezza (in metri)<input name="altezza" type="text">
+            Peso (in chilogrammi)<input name="peso" type="text">
+            <button type="button" id="imc-button">Calcola</button>
+        </form>
+        <div id="imc-output">Premi il bottone per calcolare il tuo IMC</div>
+    </div>
+</body>
+<style>
+    #main {
+        border: 2px solid black;
+    }
+    div, form {
+        margin: 10px;
+        padding: 10px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    form > * {
+        margin: 10px 0;
+    }
+</style>
+<script>
+    document.getElementById("imc-button").addEventListener("click", () => {
+        let out = document.getElementById("imc-output");
+        let form = document.getElementById("imc-input");
+        let altezza = form.altezza;
+        let peso = form.peso;
+
+        let imc = peso.value / (altezza.value*altezza.value);
+        let categoria;
+        if (imc < 16.0) {
+            categoria = "fortemenete sottopeso";
+        } else if (imc < 17.0) {
+            categoria = "moderatamente sottopeso";
+        } else if (imc < 18.5) {
+            categoria = "moderatamente sottopeso";
+        } else if (imc < 24.9) {
+            categoria = "peso normale";
+        } else if (imc < 29.9) {
+            categoria = "preadiposità";
+        } else if (imc < 34.9) {
+            categoria = "adiposità, grado I";
+        } else if (imc < 39.9) {
+            categoria = "adiposità, grado II";
+        } else if (imc >= 40) {
+            categoria = "adiposità, grado III";
+        }
+
+        out.innerHTML = `Il tuo IMC è ${imc} (${categoria})`;
+    })
+</script>
+</html>
