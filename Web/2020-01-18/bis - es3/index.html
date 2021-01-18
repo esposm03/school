@@ -16,7 +16,7 @@
         $(document).ready(() => {
             $("table").click(e => {
                 let prefix = $("select").val() === "sfondo" ? "background-" : "";
-                $(e.target).css(`${prefix}color`, "")
+                $(e.target).css(`${prefix}color`, $("input[type=color]").val())
             })
         })
     </script>
