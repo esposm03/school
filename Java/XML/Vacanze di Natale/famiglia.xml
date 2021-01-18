@@ -1,0 +1,35 @@
+<famiglia>
+    <persona nazionalita="germania">
+        <nome>Samuele Esposito</nome>
+        <annoNascita>2003</annoNascita>
+        <annoMorte>2021</annoMorte>
+
+        <madre>Stefania Toniolo</madre>
+        <padre>Giovanni Esposito</padre>
+    </persona>
+    <persona>
+        <nome>Federico Esposito</nome>
+        <annoNascita>2007</annoNascita>
+
+        <madre>Stefania Toniolo</madre>
+        <padre>Giovanni Esposito</padre>
+    </persona>
+    <persona nazionalita="spagna">
+        <nome>Arianna Esposito</nome>
+        <annoNascita>2015</annoNascita>
+        <annoMorte>2021</annoMorte>
+
+        <madre>Stefania Toniolo</madre>
+        <padre>Giovanni Esposito</padre>
+    </persona>
+    <persona>
+        <nome>Giovanni Esposito</nome>
+        <annoNascita>1973</annoNascita>
+        <consorte>Stefania Toniolo</consorte>
+    </persona>
+    <persona>
+        <nome>Stefania Toniolo</nome>
+        <annoNascita>1974</annoNascita>
+        <consorte>Giovanni Esposito</consorte>
+    </persona>
+</famiglia>

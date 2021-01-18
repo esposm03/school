@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?> <!--Prologo (da copia e incolla)-->
+<classi>
+    <classe>
+        <nomeC>4IF</nomeC>
+        <aula>202</aula>
+        <studenti>
+            <studente linguaNatia="italiano" linguaConosciuta1="inglese" linguaConosciuta2="tedesco">
+                <nome>Matteo</nome>
+                <cognome>Bazzan</cognome>
+                <dataNascita>
+                    <gg>14</gg>
+                    <mm>04</mm>
+                    <aaaa>2003</aaaa>
+                </dataNascita>
+            </studente>
+            <studente linguaNatia="portoghese" ripetente="Una volta" linguaConosciuta1="italiano" linguaConosciuta2="inglese">
+                <nome>Jacopo</nome>
+                <cognome>Carvalho</cognome>
+                <cognome>Soares</cognome>
+                <dataNascita>
+                    <gg>14</gg>
+                    <mm>04</mm>
+                    <aaaa>2003</aaaa>
+                </dataNascita>
+            </studente>
+            <studente linguaNatia="rumeno" ripetente="Due volte" linguaConosciuta1="italiano" linguaConosciuta2="spagnolo">
+                <nome>Larisa</nome>
+                <nome>Lacramioara</nome>
+                <cognome>Dudan</cognome>
+                <dataNascita>
+                    <gg>24</gg>
+                    <mm>05</mm>
+                    <aaaa>2003</aaaa>
+                </dataNascita>
+            </studente>
+        </studenti>
+    </classe>
+
+    <classe>
+        <nomeC>3IG</nomeC>
+        <aula>102</aula>
+        <aula>203</aula>
+        <studenti>
+            <studente linguaNatia="italiano" linguaConosciuta1="spagnolo">
+                <nome>Mattia</nome>
+                <cognome>Pazzan</cognome>
+                <dataNascita>
+                    <gg>14</gg>
+                    <mm>04</mm>
+                    <aaaa>2002</aaaa>
+                </dataNascita>
+            </studente>
+            <studente linguaNatia="italiano" ripetente="Due volte">
+                <nome>Jacopo</nome>
+                <cognome>Rossi</cognome>
+                <dataNascita>
+                    <gg>24</gg>
+                    <mm>14</mm>
+                    <aaaa>2003</aaaa>
+                </dataNascita>
+            </studente>
+            <studente linguaNatia="moldavo" linguaConosciuta1="inglese">
+                <nome>Larisa</nome>
+                <cognome>Lacramioara</cognome>
+                <dataNascita>
+                    <gg>19</gg>
+                    <mm>07</mm>
+                    <aaaa>2003</aaaa>
+                </dataNascita>
+            </studente>
+        </studenti>
+    </classe>
+</classi>
