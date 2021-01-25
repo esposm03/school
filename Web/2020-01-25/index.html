@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-1.12.3.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $("td").click(function() {
+                $(this)
+                    .text("ciao")
+                    .next()
+                    .text(`${ $(this).text() } mondo`)
+            })
+
+            var childText = [];
+            $("tr").mouseover(function() {
+                $(this).children().each((i, e) => {
+                    childText.push(e.textContent);
+                });
+                $(this)
+                    .children()
+                    .css("color", "red")
+                    .text("hello");
+            })
+
+            $("tr").mouseout(function() {
+                $(this)
+                    .children()
+                    .css("color", "inherit")
+                    .each((i, e) => {
+                        e.textContent = childText[i];
+                    })
+            })
+        })
+    </script>
+
+    <style>
+        table, tr, td {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+    </table>
+</body>
+</html>
