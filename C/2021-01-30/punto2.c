@@ -34,5 +34,5 @@ int main() {
         piano(&sup, &vol);
     }
 
-    printf("Superficie: %f m^2, volume: %f m^2\n", sup/10000, vol/10000);
+    printf("Superficie: %f m^2, volume: %f m^3\n", sup/10000, vol/1000000);
 }
