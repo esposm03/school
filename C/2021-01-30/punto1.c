@@ -15,6 +15,7 @@ int main() {
     scanf("%f", &importo_rata);
 
     interesse /= 100;
+    interesse /= 12;
 
     if (debito * interesse >= importo_rata) {
         printf("Attenzione, la rata annuale e' troppo bassa per estinguere il debito\n");
