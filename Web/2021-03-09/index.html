@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="../jquery-1.12.3.min.js"></script>
+
+    <title>2021-03-09</title>
+</head>
+<body>
+
+    <!-- TABELLA CON LE CELLE -->
+    <table>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>02</td>
+            <td>03</td>
+            <td>04</td>
+            <td>05</td>
+            <td>06</td>
+        </tr>
+    </table>
+
+    <table id="togen"></table>
+
+    <form id="colorForm">
+        <input id="colorInput" type="color" name="colore">
+        <input id="posInput" type="radio" name="posizione" value="sfondo">Sfondo
+        <input type="radio" name="posizione" value="testo">Testo
+        <button type="button">Invia</button>
+    </form>
+</body>
+<script>
+    var lastClick;
+
+    $("table").click(function(e) {
+        lastClick = $(e.target)
+    })
+
+    $("#colorForm > button").click(() => {
+        if ($('input[type=radio]:checked').val() === "testo")
+            lastClick.css("color", $("#colorInput").val());
+        else
+            lastClick.css("background-color", $("#colorInput").val());
+    })
+</script>
+</html>
