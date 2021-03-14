@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verifica</title>
+
+    <script src="../jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <form id="myform">
+        <input type="radio" name="unitaPartenza" value="c">Celsius
+        <input type="radio" name="unitaPartenza" value="f">Fahrenheit
+        <input type="radio" name="unitaPartenza" value="k">Kelvin
+
+        <input type="text" name="valore">
+
+        <select name="unitaArrivo">
+            <option value="c">Celsius</option>
+            <option value="f">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+        </select>
+
+        <button type="button">Converti</button>
+    </form>
+
+    <div id="risultato"></div>
+</body>
+
+<script>
+    $("form > button").click(() => {
+        let gradiKelvin;
+        let partenza = $("input[name=unitaPartenza]:checked").val();
+        let arrivo = $("select").val();
+        let valore = window.parseInt($("input[name=valore]").val());
+
+        switch (partenza) {
+            case "c":
+                gradiKelvin = valore + 273.15;
+                break;
+            case "k":
+                gradiKelvin = valore;
+                break;
+            case "f":
+                gradiKelvin = (valore - 32) / 1.8 + 273.15;
+                break;
+        }
+
+        let valoreArrivo;
+        switch (arrivo) {
+            case "c":
+                valoreArrivo = valore - 273.15;
+                break;
+            case "k":
+                valoreArrivo = valore;
+                break;
+            case "f":
+                valoreArrivo = (valore - 273.15) * 1.8 + 32;
+                break;
+        }
+
+        $("#risultato").text(valoreArrivo)
+    })
+</script>
+
+</html>

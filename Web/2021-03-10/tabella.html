@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verifica 2021-03-10</title>
+
+    <style>
+        #info {
+            border: 2px solid red;
+            height: 200px;
+        }
+
+        table, td, tr {
+            border: 1px solid black;
+        }
+
+        td {
+            width: 300px;
+            height: 100px;
+        }
+
+        .courier {
+            font-family: 'Courier New';
+        }
+
+        .times {
+            font-family: 'Times New Roman';
+        }
+
+        .verdana {
+            font-family: 'Verdana';
+        }
+
+        .impact {
+            font-family: 'Impact';
+        }
+
+        .comic {
+            font-family: 'Comic Sans MS';
+        }
+
+        .calibri {
+            font-family: 'Calibri';
+        }
+    </style>
+
+    <!-- Mi aspetto jquery nella cartella superiore a quella corrente -->
+    <script src="../jquery-1.12.3.min.js"></script>
+</head>
+<body>
+    <table id="empty">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    Testo da copiare
+
+    <table id="testo">
+        <tr>
+            <td>Palla</td>
+            <td>Carta</td>
+            <td>Trottola</td>
+            <td>Cammello</td>
+            <td>Dromedario</td>
+            <td>Fenner</td>
+        </tr>
+        <tr>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+
+    Tipo di carattere da applicare
+
+    <table id="font">
+        <tr>
+            <td class="courier">Courier New</td>
+            <td class="times">Times New Roman</td>
+            <td class="verdana">Verdana</td>
+            <td class="impact">Impact</td>
+            <td class="comic">Comic Sans MS</td>
+            <td class="calibri">Calibri</td>
+        </tr>
+    </table>
+
+    <div id="info">
+    </div>
+</body>
+
+<script>
+    var text;
+    var font;
+    update();
+
+    $("#empty td").click(function() {
+        $(this)
+            .text(text)
+            .removeAttr("class")
+            .addClass(font)
+    })
+
+    $("#testo td").click(function () {
+        text = $(this).text()
+        update()
+    })
+
+    $("#font td").click(function () {
+        font = $(this).attr("class");
+        update()
+    })
+
+    function update() {
+        $("#info").html(`Carattere attivo: ${font || "Nessuno"}<br>Testo attivo: ${text || "Nessuno"}`)
+    }
+</script>
+
+</html>
